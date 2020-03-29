@@ -1,0 +1,21 @@
+.homepageBackground {
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepageTitle {
+    color: white; 
+    text-align: center;
+    font-family: monospace;
+}
+
+.homepageTitleBackground {
+    background-color: black;
+}
+
+.beginButton {
+text-align: center;
+}
