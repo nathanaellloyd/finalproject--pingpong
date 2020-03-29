@@ -2,9 +2,9 @@ import React from 'react';
 
 export const Setup = () => (
     <>
-            <h3>Enter Player Names</h3>
-            <form  className = "settingsForm">
-                <div className = "form-group">
+            <h3 align="center">Enter Player Names</h3>
+            <form  className="settingsForm">
+                <div className="form-group">
                     <label>Player 1 Name</label>
                     <input className="form-control"></input>
                     <label>Player 2 Name</label>
@@ -25,10 +25,10 @@ export const Setup = () => (
                     <input className="form-control"></input>
                     <label>Player 10 Name</label>
                     <input className="form-control"></input>
-                    <button className="btn-primary">Shuffle</button>
-
                 </div>
-
+                <div align="center">
+                <button className="btn-primary">Shuffle</button>
+                </div> 
             </form>
     </> 
 ); 
