@@ -1,21 +1,26 @@
-.homepageBackground {
-    background-image: url("../images/background.jpg");
-    height: 100%;
+.headerBackground {
+    background-image: url("../images/background4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 15rem;
 }
 
 .homepageTitle {
+    padding: 4rem;
     color: white; 
     text-align: center;
     font-family: monospace;
-}
-
-.homepageTitleBackground {
-    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
 }
 
 .beginButton {
 text-align: center;
+}
+
+.bodyHome {
+    background-color: #686A6E;
+
 }

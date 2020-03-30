@@ -1,5 +1,5 @@
 .buttonMain {
-    background-color: #438efc;
+    background-color: #1E3239;
     border-radius: 0.2em;
     color: white;
     padding: 0.4em 1.5em;
@@ -9,5 +9,17 @@
     margin: 5rem; 
     top: 50%;
     font-family: monospace;
+}
 
+.shuffleButton {
+    background-color: #1E3239;
+    border-radius: 0.2em;
+    color: white;
+    padding: 0.4em 1.5em;
+    font-family: "Evogria", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    margin: 2rem; 
+    font-family: monospace;
 }
