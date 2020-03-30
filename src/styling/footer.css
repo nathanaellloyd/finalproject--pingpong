@@ -1,0 +1,36 @@
+footer {
+    background-color: #323335;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.teama {
+    font-size: 10px;
+    font-family: "Mont-Heavy";
+}
+
+.date {
+    margin: 0px;
+    font-size: 15px;
+    color: rgb(201, 201, 201);
+    font-family: "Mont-Light";
+}
+
+.rights {
+    font-size: 15px;
+    color: rgb(201, 201, 201);
+    font-family: "Mont-Light";
+}
+
+.icons {
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon {
+    justify-content: center;
+    max-width: 2em;
+    margin: 0.25rem;
+}

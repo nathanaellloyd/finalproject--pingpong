@@ -1,0 +1,12 @@
+.VS {
+    margin-top: 3em;
+}
+
+.fixturesWrap {
+    text-align: center;
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
