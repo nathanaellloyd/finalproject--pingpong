@@ -1,0 +1,25 @@
+.settingsForm {
+    width: 60%;
+}
+
+.setupTitle {
+    text-align: center;
+    font-family: monospace;
+    padding-top: 2rem;
+}
+
+.formBackground {
+    background-color: #948E8F;
+}
+
+label {
+    font-family: monospace;
+    padding-top: 2rem;
+}
+
+.namesList {
+    font-family: monospace;
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+}
