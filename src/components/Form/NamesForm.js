@@ -1,25 +1,43 @@
 import React, { useState } from "react"
+import initial from "../../initial"
 
 function NamesForm() {
 
-  const [names, setNames] = useState([])
-  const [query, setName] = useState("")
+  const [names, setNames] = useState(initial.names);
+  const [name, setName] = useState(initial.name);
 
   const handleChange = () => {
-    setNames(searches => searches.concat(query))
+    setNames(players => players.concat(name))
   }
 
   const updateList = ({ target }) => {
-    // Update query onKeyPress of input box
+    // Update name onKeyPress of input box
     setName(target.value)
   }
 
   const submitHandler = e => {
     // Prevent form submission on Enter key
     e.preventDefault()
+    setName("");
   }
 
-  const Players = ({ query }) => <li>{query}</li>
+  const handleReset = () => {
+    setNames([]);
+    setName("");
+  }
+
+  const Players = ({ name }) => <li>{name}</li>
+
+  // function shuffleArray(array) {
+  //   let i = array.length - 1;
+  //   for (; i > 0; i--) {
+  //     const j = Math.floor(Math.random() * (i + 1));
+  //     const temp = array[i];
+  //     array[i] = array[j];
+  //     array[j] = temp;
+  //   }
+  //   return array;
+  // }
 
   return (
     <>
@@ -32,29 +50,32 @@ function NamesForm() {
                 <label className="label" for="name">Player Name</label>
                 <input
                   onChange={updateList}
-                  type="text" className="form-control" />
-                <button className="addButton" onClick={handleChange} >Add</button>
-                <button className="resetButton">Reset</button>
+                  type="text" className="form-control"
+                  value={name} />
+                <button className="addButton" onClick={handleChange}>Add</button>
+                <button className="resetButton" 
+                onClick={handleReset}
+                >Reset</button>
                 <div className="App">
                   <ul className="namesList">
-                    {names.map((query, i) => (
+                    {names.map((name) => (
                       <Players
-                        query={query}
+                        name={name}
                         // Prevent duplicate keys by appending index:
-                        key={query + i}
+                        key={name}
                       />
                     ))}
                   </ul>
                   <div className="shuffleWrap">
-                    <button className="shuffleButton" >Shuffle</button>
+                    <button className="shuffleButton">Shuffle</button>
                   </div>
                 </div>
               </div>
             </div>
-           </div> 
+          </div>
         </form>
-          {/* <List items={this.state.items} /> */}
-       </div>               
+        {/* <List items={this.state.items} /> */}
+      </div>
     </>
   );
 };
