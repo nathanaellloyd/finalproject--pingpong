@@ -1,23 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Home } from "./Home";
-import { Setup } from "./Setup";
+import Home from "./Home";
 import Footer from "./Footer";
 import Header from "./Header";
-import Fixtures from "./Fixtures";
-import NamesForm from "./NamesForm"; 
+import NamesForm from "./Form/NamesForm.js"; 
 
 function App() {
+ 
   return (
     <React.Fragment>
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home}>
+          <Route exact path="/"> 
+            <Home />
           </Route>
-          <Route exact path="/setup" component={Setup}>
-          </Route>
-          <Route exact path="/namesform" component={NamesForm}>
+          <Route exact path="/namesform">
+             <NamesForm />
           </Route>
         </Switch>
         <Footer />

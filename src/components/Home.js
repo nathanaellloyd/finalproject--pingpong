@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const Home = () => (
-  <div class="bodyHome">
-    <div class="homepageTitle"> 
+const Home = () => (
+  <div className="bodyHome">
+    <div className="homepageTitle"> 
     <h1 >Ping Pong Tournament</h1>
     <h3 >The table tennis tournament generator</h3>
   </div>
-      <div class="beginButton">
+      <div className="beginButton">
       <Link to="/namesform">
-      <button class="buttonMain">Begin</button>
+      <button className="buttonMain">Begin</button>
       </Link>
       </div>
   </div>
 )
+
+export default Home; 

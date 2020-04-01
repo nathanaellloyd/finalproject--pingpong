@@ -2,7 +2,7 @@ import React from 'react';
 
 export const header = () => (
 
-  <div class="headerBackground">
+  <div className="headerBackground">
   </div>
 )
 
