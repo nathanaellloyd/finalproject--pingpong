@@ -28,31 +28,24 @@ function NamesForm() {
 
   const Players = ({ name }) => <li>{name}</li>
 
-  // const handleTeams = () => {
-  //   let halfwayThrough = Math.floor(names.length / 2);
-  //   setNames({ 
-  //      name: "",
-  //      names: [],
-  //      groupOne: [...names.slice(0, halfwayThrough)],
-  //      groupTwo: [...names.slice(halfwayThrough, names.length)]
-  //      })
-  //   };
+  const Pairs = ({ pair }) => <li>{pair}</li>
 
-  // const shuffle = (players) => {
-  //     players.sort(() => Math.random() - 0.5);
-  //   }
+  const pairs = [];
 
-  // // create a function that shuffles the entered names
-  // const handlePairs = () => {
+  const createTeam = () => {
+  // as we need at least players to form a pair
+  while (names.length >= 2) { 
 
-  //   const { names } = setNames;
-  //   setNames({
-  //       namesShuffled: shuffle(names),
-  //     });
-  // }
+  names.sort(() => 0.5 - Math.random());
+  const pair = [names.pop(), names.pop()];  
 
-    // // All pairs
-    // console.log('All pairs', pairs);
+  // Save current pair
+  pairs.push(pair);
+
+  // Current pair
+  console.log('One pair', pair);
+
+  }}
 
   return (
     <>
@@ -82,17 +75,21 @@ function NamesForm() {
                   </ul>
                   <div className="formBackground">
                     <div className="shuffleWrap">
-                      {/* <button className="createButton" onClick={handleTeams}>Create Fixtures</button>
-                      <button className="shuffleButton" onClick={handlePairs}>Shuffle Tournament</button> */}
+                      <button className="createButton" 
+                      onClick={createTeam}
+                      >Create Fixtures</button>
+                      <button className="shuffleButton" 
+                      // onClick={shuffle}
+                      >Shuffle Tournament</button>
                       <ul className="namesList">
-                        {/* // new arrays go here
-                    {pairs.map((name) => (
-                      <Players
-                        name={name}
+                        {/* // new arrays go here */}
+                    {pairs.map((pair) => (
+                      <Pairs
+                        names={pair}
                         // Prevent duplicate keys by appending index:
-                        key={name}
+                        key={pair}
                       />
-                    ))} */}
+                    ))}
                     </ul>
                     </div>
                   </div>
