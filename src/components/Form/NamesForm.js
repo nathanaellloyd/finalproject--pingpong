@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import initial from "../../initial"
+import React, { useState } from "react";
+import initial from "../../initial";
 
 function NamesForm() {
 
@@ -17,7 +17,7 @@ function NamesForm() {
 
   const submitHandler = e => {
     // Prevent form submission on Enter key
-    e.preventDefault()
+    e.preventDefault();
     setName("");
   }
 
@@ -28,21 +28,36 @@ function NamesForm() {
 
   const Players = ({ name }) => <li>{name}</li>
 
-  // function shuffleArray(array) {
-  //   let i = array.length - 1;
-  //   for (; i > 0; i--) {
-  //     const j = Math.floor(Math.random() * (i + 1));
-  //     const temp = array[i];
-  //     array[i] = array[j];
-  //     array[j] = temp;
+  // const handleTeams = () => {
+  //   let halfwayThrough = Math.floor(names.length / 2);
+  //   setNames({ 
+  //      name: "",
+  //      names: [],
+  //      groupOne: [...names.slice(0, halfwayThrough)],
+  //      groupTwo: [...names.slice(halfwayThrough, names.length)]
+  //      })
+  //   };
+
+  // const shuffle = (players) => {
+  //     players.sort(() => Math.random() - 0.5);
   //   }
-  //   return array;
+
+  // // create a function that shuffles the entered names
+  // const handlePairs = () => {
+
+  //   const { names } = setNames;
+  //   setNames({
+  //       namesShuffled: shuffle(names),
+  //     });
   // }
+
+    // // All pairs
+    // console.log('All pairs', pairs);
 
   return (
     <>
       <div className="formBackground">
-        <h3 className="setupTitle">Enter Player Names (4 minimum)</h3>
+        <h3 className="setupTitle">Enter 4 Player Names</h3>
         <form className="App" onSubmit={submitHandler}>
           <div className="container" align="center">
             <div className="row">
@@ -53,10 +68,9 @@ function NamesForm() {
                   type="text" className="form-control"
                   value={name} />
                 <button className="addButton" onClick={handleChange}>Add</button>
-                <button className="resetButton" 
-                onClick={handleReset}
+                <button className="resetButton"
+                  onClick={handleReset}
                 >Reset</button>
-                <div className="App">
                   <ul className="namesList">
                     {names.map((name) => (
                       <Players
@@ -66,18 +80,29 @@ function NamesForm() {
                       />
                     ))}
                   </ul>
-                  <div className="shuffleWrap">
-                    <button className="shuffleButton">Shuffle</button>
+                  <div className="formBackground">
+                    <div className="shuffleWrap">
+                      {/* <button className="createButton" onClick={handleTeams}>Create Fixtures</button>
+                      <button className="shuffleButton" onClick={handlePairs}>Shuffle Tournament</button> */}
+                      <ul className="namesList">
+                        {/* // new arrays go here
+                    {pairs.map((name) => (
+                      <Players
+                        name={name}
+                        // Prevent duplicate keys by appending index:
+                        key={name}
+                      />
+                    ))} */}
+                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </form>
-        {/* <List items={this.state.items} /> */}
       </div>
     </>
-  );
+  ); 
 };
 
 export default NamesForm;

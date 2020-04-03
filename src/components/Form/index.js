@@ -1,10 +1,17 @@
-import { connect } from 'react-redux';
-import NamesForm from './NamesForm';
+// import { connect } from 'react-redux';
+// import NamesForm from './NamesForm';
 
-const mapStateToProps = (state) => {
-    return {
-        playerName: state.playerName,
-    }
-}
+// const mapStateToProps = ({ names, name }) => ({
+// 	setNames: names,
+// 	setName: name,
+// });
 
-export default connect(mapStateToProps)(NamesForm);
+// const mapDispatchToProps = dispatch => {
+// 	return {
+// 		Players: (names) => {
+// 			dispatch(Players(names))
+// 		},
+// 	};
+// };
+
+// export default connect(mapStateToProps, mapDispatchToProps)(NamesForm);

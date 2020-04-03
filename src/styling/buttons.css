@@ -24,6 +24,19 @@
     font-family: monospace;
 }
 
+.createButton {
+    background-color: #353C3A;
+    border-radius: 0.2em;
+    color: white;
+    padding: 0.4em 1.5em;
+    font-family: "Evogria", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    margin: 2rem; 
+    font-family: monospace;
+}
+
 .addButton {
     background-color: #0468d9;
     border-radius: 0.2em;
