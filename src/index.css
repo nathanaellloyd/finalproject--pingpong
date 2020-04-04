@@ -1,7 +1,6 @@
-@import './styling/Homepage.css';
+@import './styling/homepage.css';
 @import './styling/mediaqueries.css'; 
 @import './styling/buttons.css'; 
 @import './styling/footer.css'; 
-@import './styling/NamesForm.css'; 
-@import './styling/Fixtures.css'; 
-@import './styling/Shuffle.css'; 
+@import './styling/namesform.css'; 
+@import './styling/shuffle.css'; 

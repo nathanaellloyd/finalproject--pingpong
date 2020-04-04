@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from "./Home";
 import Footer from "./Footer";
 import Header from "./Header";
-import NamesForm from "./Form/NamesForm.js"; 
-import FixtureList from "./Form/FixtureList"; 
+import NamesForm from "./NamesForm.js"; 
 
 function App() {
  
@@ -18,9 +17,6 @@ function App() {
           </Route>
           <Route exact path="/namesform">
              <NamesForm />
-          </Route>
-          <Route exact path="/fixtures">
-            <FixtureList />
           </Route>
         </Switch>
         <Footer />

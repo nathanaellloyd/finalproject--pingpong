@@ -62,3 +62,16 @@
     top: 50%;
     font-family: monospace;
 }
+
+.homeButton {
+    background-color: #46a049;
+    border-radius: 0.2em;
+    color: white;
+    padding: 0.4em 1.5em;
+    font-family: "Evogria", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 1rem; 
+    top: 50%;
+    font-family: monospace;
+}
