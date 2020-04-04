@@ -1,56 +1,68 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import initial from "../initial";
 
 function NamesForm() {
 
+  // here I'm setting the state for the names array and the pairs array
   const [names, setNames] = useState(initial.names);
   const [name, setName] = useState(initial.name);
+  const [pairs, setPairs] = useState([]);
 
+  // here the names are being added to the array once the add button is clicked
   const handleChange = () => {
     setNames(players => players.concat(name))
   }
 
+  // the value in the input field is being used to add to the names array
   const updateList = ({ target }) => {
-    // Update name onKeyPress of input box
+    // update name onKeyPress of input box
     setName(target.value)
   }
 
+  // sets the input field back to empty
   const submitHandler = e => {
-    // Prevent form submission on Enter key
+    // prevent form submission on Enter key
     e.preventDefault();
     setName("");
   }
 
+  // clears the state if the user wants to reset 
   const handleReset = () => {
     setNames([]);
     setName("");
     setPairs([]);
   }
 
-  const Players = ({ name }) => <li>{name}</li>
-
-  const ListTeams = ({ pair }) => <li>{pair[0]} v {pair[1]}</li>
-
-  const [pairs, setPairs] = useState([]);
-
   const createTeam = () => {
+    // creates a new array for new pairs 
     const newPairs = [];
-    
-    // as we need at least players to form a pair
+
+    // needs atleast 2 players to form a pair
     while (names.length >= 2) {
 
+      // randomises the pairs 
       names.sort(() => 0.5 - Math.random());
 
+      // takes each name and puts them into a pair
       const pair = [names.pop(), names.pop()];
 
-      // Save current pair
+      // saves the current pair
       newPairs.push(pair);
 
-      // Current pair
-      console.log('One pair', pair);
+      // logging current pair to check it's worked
+      console.log(pair);
     }
+    //takes the new pairs and asigns them to the state
     setPairs(newPairs);
   }
+
+  // React components should start with a capital, and html elements start with lowercase  
+  // listing new name once added 
+  const Players = ({ name }) => <li>{name}</li>
+
+  // listing new pairs once teams are created 
+  const ListTeams = ({ pair }) => <li>{pair[0]} v {pair[1]}</li>
 
   return (
     <>
@@ -60,7 +72,8 @@ function NamesForm() {
           <div className="container" align="center">
             <div className="row">
               <div className="col">
-               <label className="label" htmlFor="name">Player Name</label>
+                {/* // needs to be htmlFor otherwise throws an error in the console  */}
+                <label className="label" htmlFor="name">Player Name</label>
                 <input
                   onChange={updateList}
                   type="text" className="form-control"
@@ -73,7 +86,7 @@ function NamesForm() {
                   {names.map((name) => (
                     <Players
                       name={name}
-                      // Prevent duplicate keys by appending index:
+                      // prevent duplicate keys by appending index:
                       key={name}
                     />
                   ))}
@@ -82,7 +95,11 @@ function NamesForm() {
                   <div className="shuffleWrap">
                     <button className="createButton"
                       onClick={createTeam}
-                    >Create Fixtures</button>
+                      // disabling button if an uneven number of pairs, or 0 is entered by the user 
+                      disabled={!names.length || names.length % 2}>
+                      Create Fixtures</button>
+                    {/* displays error message if an uneven number of players are added */}
+                    {names.length % 2 ? <p className="errorMessage">Please enter an even number of players</p> : null}
                     <ul className="namesList">
                       {pairs.map((pair) => (
                         <ListTeams
@@ -91,7 +108,9 @@ function NamesForm() {
                         />
                       ))}
                     </ul>
-                    <button className="homeButton">Back To Start</button>
+                    <Link to="/">
+                      <button className="homeButton">Back To Start</button>
+                    </Link>
                   </div>
                 </div>
               </div>
