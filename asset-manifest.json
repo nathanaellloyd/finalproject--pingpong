@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/finalproject--pingpong/static/css/main.933024c3.chunk.css",
-    "main.js": "/finalproject--pingpong/static/js/main.967edc8f.chunk.js",
-    "main.js.map": "/finalproject--pingpong/static/js/main.967edc8f.chunk.js.map",
+    "main.css": "/finalproject--pingpong/static/css/main.0edf1d2e.chunk.css",
+    "main.js": "/finalproject--pingpong/static/js/main.bedd683f.chunk.js",
+    "main.js.map": "/finalproject--pingpong/static/js/main.bedd683f.chunk.js.map",
     "runtime-main.js": "/finalproject--pingpong/static/js/runtime-main.022504ad.js",
     "runtime-main.js.map": "/finalproject--pingpong/static/js/runtime-main.022504ad.js.map",
     "static/css/2.de424728.chunk.css": "/finalproject--pingpong/static/css/2.de424728.chunk.css",
     "static/js/2.ba60f04b.chunk.js": "/finalproject--pingpong/static/js/2.ba60f04b.chunk.js",
     "static/js/2.ba60f04b.chunk.js.map": "/finalproject--pingpong/static/js/2.ba60f04b.chunk.js.map",
     "index.html": "/finalproject--pingpong/index.html",
-    "precache-manifest.ccdf23df8efb9712d7e098dc321534e7.js": "/finalproject--pingpong/precache-manifest.ccdf23df8efb9712d7e098dc321534e7.js",
+    "precache-manifest.926578545d848e0a2b9420d13d79c9f8.js": "/finalproject--pingpong/precache-manifest.926578545d848e0a2b9420d13d79c9f8.js",
     "service-worker.js": "/finalproject--pingpong/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/finalproject--pingpong/static/css/2.de424728.chunk.css.map",
-    "static/css/main.933024c3.chunk.css.map": "/finalproject--pingpong/static/css/main.933024c3.chunk.css.map",
+    "static/css/main.0edf1d2e.chunk.css.map": "/finalproject--pingpong/static/css/main.0edf1d2e.chunk.css.map",
     "static/js/2.ba60f04b.chunk.js.LICENSE.txt": "/finalproject--pingpong/static/js/2.ba60f04b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/finalproject--pingpong/static/media/background4.7cf3104e.jpg",
     "static/media/twitter2.png": "/finalproject--pingpong/static/media/twitter2.c8f7c054.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.022504ad.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.ba60f04b.chunk.js",
-    "static/css/main.933024c3.chunk.css",
-    "static/js/main.967edc8f.chunk.js"
+    "static/css/main.0edf1d2e.chunk.css",
+    "static/js/main.bedd683f.chunk.js"
   ]
 }
