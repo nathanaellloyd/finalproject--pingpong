@@ -24,6 +24,13 @@ label {
     text-align: left;
 }
 
+.fixtureList {
+    font-family: monospace;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
 .errorMessage {
     font-family: monospace;
 }

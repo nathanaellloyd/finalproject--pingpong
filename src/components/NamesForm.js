@@ -100,7 +100,7 @@ function NamesForm() {
                       Create Fixtures</button>
                     {/* displays error message if an uneven number of players are added */}
                     {names.length % 2 ? <p className="errorMessage">Please enter an even number of players</p> : null}
-                    <ul className="namesList">
+                    <ul className="fixtureList">
                       {pairs.map((pair) => (
                         <ListTeams
                           pair={pair}
