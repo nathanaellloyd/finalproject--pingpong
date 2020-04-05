@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc448fc45a82b1c5be05311cda7c65d4",
+    "revision": "745cbbab6407e5d0c678b0ddda1f1bcb",
     "url": "/finalproject--pingpong/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/finalproject--pingpong/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "fcd9d9de1f233eb14160",
-    "url": "/finalproject--pingpong/static/css/main.681270d7.chunk.css"
+    "revision": "714266a1e4a5c4041a60",
+    "url": "/finalproject--pingpong/static/css/main.933024c3.chunk.css"
   },
   {
     "revision": "9299474f14f8b5045213",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/finalproject--pingpong/static/js/2.ba60f04b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fcd9d9de1f233eb14160",
-    "url": "/finalproject--pingpong/static/js/main.661c132d.chunk.js"
+    "revision": "714266a1e4a5c4041a60",
+    "url": "/finalproject--pingpong/static/js/main.967edc8f.chunk.js"
   },
   {
     "revision": "3b1cc08c3a0dea1c5545",
