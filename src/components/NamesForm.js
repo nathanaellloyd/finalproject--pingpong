@@ -88,32 +88,30 @@ function NamesForm() {
                     <Players
                       name={name}
                       // prevent duplicate keys by appending index:
-                      key={name}
-                    />
+                      key={name} />
                   ))}
                 </ul>
                 <div className="formBackground">
-                    <button className="createButton"
-                      onClick={createTeam}
-                      // disabling button if an uneven number of pairs, or 0 is entered by the user 
-                      disabled={!names.length || names.length % 2}>
-                      Create Fixtures</button>
-                    {/* displays error message if an uneven number of players are added */}
-                    <div className="fixtureList">
-                      {pairs.map((pair) => (
-                        <ListTeams
-                          pair={pair}
-                          key={pair}
-                        />
-                      ))}
-                    </div>
-                    <Link to="/">
-                      <button className="homeButton">Back To Start</button>
-                    </Link>
+                  <button className="createButton"
+                    onClick={createTeam}
+                    // disabling button if an uneven number of pairs, or 0 is entered by the user 
+                    disabled={!names.length || names.length % 2}>
+                    Create Fixtures</button>
+                  {/* displays error message if an uneven number of players are added */}
+                  <div className="fixtureList">
+                    {pairs.map((pair) => (
+                      <ListTeams
+                        pair={pair}
+                        key={pair} />
+                    ))}
                   </div>
+                  <Link to="/">
+                    <button className="homeButton">Back To Start</button>
+                  </Link>
                 </div>
               </div>
             </div>
+          </div>
         </form>
       </div>
     </>
