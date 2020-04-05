@@ -23,6 +23,14 @@ React, JSX, JavaScript, HTML, CSS & Git.
 Create a tool which randomly creates pairings for a table tennis tournament bracket from a list of names collected from the 
 user.
 
+## Further Goals  
+
+- Enable the user to set the size of the tournament
+- Create a more visually interesting way to show the fixtures
+- The ability to record scores for each player, or mark which player won from each pairing, to create the next round of the   tournament playoffs
+- A continutation of rounds generated until the final
+- To show an error message if you press 'Create Teams' and you have the wrong amount of players added. It currently shows     the error message even after 1 player is added, when it's likely that the user knows they have to enter more
+
 ### Planning: 
 
 ###### Programming
@@ -33,14 +41,6 @@ I need to provide clear and intuitive visual guidance and ensure it's easy to us
 
 ###### UI 
 App needs to be responsive and accessible. Needs to be enjoyable to use on a small device as well as a larger device. 
-
-## Further Goals  
-
-- Enable the user to set the size of the tournament
-- Create a more visually interesting way to show the fixtures
-- The ability to record scores for each player, or mark which player won from each pairing, to create the next round of the   tournament playoffs
-- A continutation of rounds generated until the final
-- To show an error message if you press 'Create Teams' and you have the wrong amount of players added. It currently shows     the error message even after 1 player is added, when it's likely that the user knows they have to enter more
 
 ## Wireframes 
 
