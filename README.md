@@ -4,7 +4,21 @@ A tool which generates random fixtures for a table tennis tournament.
 
 #How to set up
 
-NPM and a Command Line tool is needed.
-git clone this repo and cd into the project folder
-run npm install
-run npm start to view on localhost:3000 on browser
+1. NPM and a Command Line tool is needed.
+2. Git clone this repo and cd into the project folder
+3. Run npm install
+4. Run npm start to view on localhost:3000 on browser
+
+#You can view the live app here - 
+
+#Technologies and skills used: 
+
+React, JSX, JavaScript, HTML, CSS & Git. 
+
+#MVP:
+
+Create a tool which randomly creates pairings for a table tennis tournament bracket from a list of names collected from the 
+user.
+
+
+
