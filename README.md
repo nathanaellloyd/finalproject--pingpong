@@ -41,3 +41,17 @@ App needs to be responsive and accessible. Needs to be enjoyable to use on a sma
 - The ability to record scores for each player, or mark which player won from each pairing, to create the next round of the   tournament playoffs
 - A continutation of rounds generated until the final
 - To show an error message if you press 'Create Teams' and you have the wrong amount of players added. It currently shows     the error message even after 1 player is added, when it's likely that the user knows they have to enter more
+
+## Wireframes 
+
+At first, I found it useful to sketch out the design on paper. 
+
+![Wireframes](/wireframes/Sketch.jpg)
+
+Then I used the application Pencil to create some basic wireframes.
+
+![Wireframes](/wireframes/PlayerEntry.png)
+
+![Wireframes](/wireframes/FixturesPage.png)
+
+
