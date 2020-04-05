@@ -10,7 +10,7 @@ NPM and a Command Line tools used to do the following
 2. Run *npm install*
 3. Run *npm start* to view on localhost:3000 on browser
 
-You can view the live app here - 
+You can view the live app here - https://natelloyd1.github.io/finalproject--pingpong/
 
 ## Technologies and skills used: 
 
