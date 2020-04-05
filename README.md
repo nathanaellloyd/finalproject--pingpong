@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 A tool which generates random fixtures for a table tennis tournament. 
 
-How to set up
+#How to set up
 
 NPM and a Command Line tool is needed.
 git clone this repo and cd into the project folder
