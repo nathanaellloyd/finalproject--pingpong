@@ -13,17 +13,22 @@ A tool which generates random fixtures for a table tennis tournament.
 
 You can view the live app here - 
 
-###### Technologies and skills used: 
+## Technologies and skills used: 
 
 React, JSX, JavaScript, HTML, CSS & Git. 
 
-###### MVP:
+### MVP:
 
 Create a tool which randomly creates pairings for a table tennis tournament bracket from a list of names collected from the 
 user.
 
-Programming perspective: I Need to take user a input, then store in an array, then divide into two arrays (by pushing items in random order). 
+### Planning: 
 
-UX perspective: I need to provide clear and intuitive visual guidance and an easy to use UI.
+###### Programming
+I Need to take user a input, then store in an array, then divide into two arrays (by pushing items in random order). 
 
-UI perspective: App needs to be responsive and accessible. Needs to be enjoyable to use on a small device as well as a larger device. 
+###### UX  
+I need to provide clear and intuitive visual guidance and an easy to use UI.
+
+###### UI 
+App needs to be responsive and accessible. Needs to be enjoyable to use on a small device as well as a larger device. 
