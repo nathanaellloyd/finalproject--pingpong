@@ -1,6 +1,6 @@
 # Ping Pong Tournament 
 
-A tool which generates random fixtures for a table tennis tournament. 
+#### A tool which generates random fixtures for a table tennis tournament. 
 
 ![Mockup](/mockup/mockup2.jpg)
 
