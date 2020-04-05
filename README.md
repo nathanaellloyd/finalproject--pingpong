@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Ping Pong Tournament 
 
 A tool which generates random fixtures for a table tennis tournament. 
@@ -28,7 +26,7 @@ user.
 I Need to take user a input, then store in an array, then divide into two arrays (by pushing items in random order). 
 
 ###### UX  
-I need to provide clear and intuitive visual guidance and an easy to use UI.
+I need to provide clear and intuitive visual guidance and ensure it's easy to use. 
 
 ###### UI 
 App needs to be responsive and accessible. Needs to be enjoyable to use on a small device as well as a larger device. 
