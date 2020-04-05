@@ -30,3 +30,8 @@ I need to provide clear and intuitive visual guidance and ensure it's easy to us
 
 ###### UI 
 App needs to be responsive and accessible. Needs to be enjoyable to use on a small device as well as a larger device. 
+
+## Further Goals  
+
+- Enable the user to set the size of the tournament.
+- Create a more visually interesting way to show the fixtures. 
