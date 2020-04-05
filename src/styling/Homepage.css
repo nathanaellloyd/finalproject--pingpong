@@ -4,16 +4,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 15rem;
+    height: 100%;
 }
 
 .homepageTitle {
-    padding: 4rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     color: white; 
     text-align: center;
     font-family: monospace;
     text-align: center;
     vertical-align: middle;
-    line-height: 90px;
+    line-height: 50px;
+}
+
+.homepageSubTitle {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: white; 
+    text-align: center;
+    font-family: monospace;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
 }
 
 .beginButton {

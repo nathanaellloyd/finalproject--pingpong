@@ -62,7 +62,7 @@ function NamesForm() {
   const Players = ({ name }) => <li>{name}</li>
 
   // listing new pairs once teams are created 
-  const ListTeams = ({ pair }) => <li>{pair[0]} v {pair[1]}</li>
+  const ListTeams = ({ pair }) => <table className="fixtureTableWrap"><tbody><tr><td>{pair[0]}</td><td>V</td><td>{pair[1]}</td></tr></tbody></table>
 
   return (
     <>
@@ -78,6 +78,7 @@ function NamesForm() {
                   onChange={updateList}
                   type="text" className="form-control"
                   value={name} />
+                {names.length % 2 ? <p className="errorMessage">Please enter an even number of players to continue</p> : null}
                 <button className="addButton" onClick={handleChange}>Add</button>
                 <button className="resetButton"
                   onClick={handleReset}
@@ -92,22 +93,20 @@ function NamesForm() {
                   ))}
                 </ul>
                 <div className="formBackground">
-                  <div className="shuffleWrap">
                     <button className="createButton"
                       onClick={createTeam}
                       // disabling button if an uneven number of pairs, or 0 is entered by the user 
                       disabled={!names.length || names.length % 2}>
                       Create Fixtures</button>
                     {/* displays error message if an uneven number of players are added */}
-                    {names.length % 2 ? <p className="errorMessage">Please enter an even number of players</p> : null}
-                    <ul className="fixtureList">
+                    <div className="fixtureList">
                       {pairs.map((pair) => (
                         <ListTeams
                           pair={pair}
                           key={pair}
                         />
                       ))}
-                    </ul>
+                    </div>
                     <Link to="/">
                       <button className="homeButton">Back To Start</button>
                     </Link>
@@ -115,7 +114,6 @@ function NamesForm() {
                 </div>
               </div>
             </div>
-          </div>
         </form>
       </div>
     </>
