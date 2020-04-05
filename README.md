@@ -5,9 +5,9 @@ A tool which generates random fixtures for a table tennis tournament.
 ## How to set up
 
 1. NPM and a Command Line tool is needed.
-2. Git clone this repo and cd into the project folder
-3. Run npm install
-4. Run npm start to view on localhost:3000 on browser
+2. Git clone this repo and *cd* into the project folder
+3. Run *npm install*
+4. Run *npm start* to view on localhost:3000 on browser
 
 You can view the live app here - 
 
@@ -35,3 +35,5 @@ App needs to be responsive and accessible. Needs to be enjoyable to use on a sma
 
 - Enable the user to set the size of the tournament.
 - Create a more visually interesting way to show the fixtures. 
+- The ability to record scores for each player, or mark which player won from each pairing, to create the next round of the   tournament playoffs
+- A continutation of rounds generated until the final
