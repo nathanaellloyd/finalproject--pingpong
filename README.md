@@ -23,7 +23,7 @@ user.
 ### Planning: 
 
 ###### Programming
-I Need to take user a input, then store in an array, then divide into two arrays (by pushing items in random order). 
+To take user a input, then store it in an array. Then the application needs to divide into two arrays, by pushing items in random order. 
 
 ###### UX  
 I need to provide clear and intuitive visual guidance and ensure it's easy to use. 
