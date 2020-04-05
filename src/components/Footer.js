@@ -9,7 +9,7 @@ const Footer = () => (
             <p className="rights"><i>Designed & Built by Nate Lloyd</i></p>
             <div className="icons">
     
-            <a href='/https://twitter.com/nateknown' className="icon" >
+            <a href='https://twitter.com/nateknown/' className="icon" >
                 <img src={twitter} link="" alt="twitterwidget" width="100%"  className="icon" />
             </a>
             </div>
